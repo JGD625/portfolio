@@ -40,6 +40,7 @@ nav {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    z-index: 1;
 }
 
 ul {
@@ -69,21 +70,10 @@ li {
     
 }
 
-.navlink {
-    background-color: #000;
-    border: 0;
-}
-
-.navlink > a:hover {
-    color: #fff;
-}
-
 header {
     padding: 5% 0px;
     background-color: #fff;
   }
-
-
 
 main {
     padding: 10px;
@@ -98,7 +88,7 @@ section {
     background-color: #fff;
   }
 
-  #contact-section {
+#social-section {
     text-align: center;
     padding-bottom: 30px;
 }
@@ -107,19 +97,14 @@ section {
     display: none;
 }
 
-footer {
-    display: none;
-  }
-
-
-  .clearfix::after {
+.clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
 
   /*containers*/
-  .banner-container {
+.banner-container {
     position: relative;
     top: 20px;
     margin-left: auto;
@@ -151,12 +136,6 @@ footer {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.project-p {
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-}
-
 .quote {
     position: absolute;
     top: 5px;
@@ -170,19 +149,19 @@ footer {
 
 }
 
-  .teal {
+.teal {
       color: #198396;
   }
 
-  .white {
+.white {
       color: #fff;
   }
 
-  .center {
+.center {
       text-align: center;
   }
 
-  .bigger {
+.bigger {
     font-family: 'Oswald', sans-serif;  
     font-weight: bold;
 }
@@ -192,7 +171,7 @@ footer {
     padding-right: 5px;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     font-family: 'Oswald', sans-serif;  
 }
 
@@ -214,7 +193,6 @@ h4 {
 
 h5 {
     color: #000;
-    font-family: 'Oswald', sans-serif;
     font-size: 25px;
     margin-top: 10px;
     position: relative;
@@ -251,7 +229,11 @@ h5 span {
 
 p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
     text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 a {
@@ -259,6 +241,15 @@ a {
     color: #198396;
     font-family: 'Oswald', sans-serif;
     font-size: 18px;
+}
+
+.navlink {
+    background-color: #000;
+    border: 0;
+}
+
+.navlink > a:hover {
+    color: #fff;
 }
 
 .line24 {
@@ -274,8 +265,8 @@ a {
 
 .bio-art {
     border: 0;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -293,6 +284,7 @@ a {
         right: 0;
         height: 70px;
         width: 100%;
+        z-index: 1;
       }
 
     main {
@@ -340,7 +332,7 @@ a {
     }
 
     header {
-        height: 600px;
+        height: 500px;
     }
     
     .banner-container {
@@ -365,20 +357,21 @@ a {
     #projects-section-DT {
         display: block;
         min-width: 500px;
+        margin-top: 45px;
 
     }
 
-    #social-section {
+#social-section {
         position: relative;
-        bottom: 100px;
+        bottom: 50px;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 35px;
+        margin-top: 45px;
         background: #fff;
 
     }
 
-    .mobile-thumb {
+.mobile-thumb {
         height: 450px;
         width: 250px;
         position: absolute;
@@ -386,7 +379,7 @@ a {
         right: 25px;
     }
 
-    .desktop-thumb {
+.desktop-thumb {
         height:245px;
         width:350px;
         position: absolute;
@@ -394,24 +387,14 @@ a {
         left: 25px;
     }
 
-    .project-p {
-        position: absolute;
-        top: 15px;
-        left: 20px;
-        font-weight: bold;
-        font-size: 26px;
-        color: #fff;
-
-    }
-
-    .project-icons {
+.project-icons {
         position: absolute;
         top: 80px;
         left: 40px;
         font-size: 22px;
     }
 
-    .bio-art {
+.bio-art {
         height: 400px;
         width: 400px;
         float: right;
@@ -419,20 +402,20 @@ a {
         border: 0;
     }
 
-    .DTthumb1 {
+.DTthumb1 {
         width: 300px;
         height: 506px;
         margin-left: 25px;
         padding-top: 50px;
     }
 
-    .DTthumb2 {
+.DTthumb2 {
         width: 350px;
         height: 245px;
     }
 
 
-     /*font styling*/
+ /*font styling*/
 
 .teal {
     color: #198396;
@@ -476,6 +459,8 @@ h5 {
 
 p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 main {
