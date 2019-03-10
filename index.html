@@ -1,45 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>HTML wireframe</title>
+    <title>JDButisbauch</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 <body>
     <header role="banner">
-        <h1> Hero</h1>
+            <div class="mobile-title"><h5>
+                    <span>JDButisbauch</span>
+                  </h5></div>
+        <div class="banner-container">
+        <h1><span class="quote">Make it simple,<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;but <span class="teal">significant.</span></span></h1>
+            <h3 class="don">-don draper</h3>
+            </div>
     </header>
 
     <main role="main">
+
         <section id="bio-section">
-            Bio
-        </section>
+            <p>&nbsp;&nbsp;I am training in Full Stack web development with Thinkful.  I enjoy watching ideas come to life, solving riddles, and studying languages. My favorite questions are “How?”, and “Why?”. I have a strong sense of design, and enjoy translating a concept into a working experience. I speak HTML, JavaScript, JQuery, CSS, native English and passable Japanese. I currently live in Atlanta.
+            </p>
+            <img class="bio-art" alt="JDB Headshot" src="https://static.wixstatic.com/media/d9f074_f0848342eb874d9ea969d3effc1db4e7~mv2.jpg"></div>
+            <p>&nbsp;&nbsp;When I’m away from my desk, I enjoy creating art, reading, hiking, and playing video games. Not to show my age, but I love a classic side scroller. I have lived on two continents, two coasts, am always down for live music and local food. I love adventure.
+            </p>    
+            <p class="bigger center">It’s a pleasure to meet you. My name is <span class="teal">Julie</span>.</p>
+            </section>
+            
         <section id="projects-section">
-            Projects
+                <h5><span class="bgwhite black">Projects</span></h5>
+            <div class="project-container">
+                    <h2>The Coffee Quiz</h2>
+                    <p class="center">An interactive quiz to test your coffee IQ</p>
+                    <img class="mobile-thumb" src="https://static.wixstatic.com/media/d9f074_bb645078c19248baaaaa25269bb94d29~mv2.jpg" alt="coffe quiz mobile"><br>
+                    <span class="project-icons"><i class="fab fa-html5"></i>   <i class="fab fa-css3"></i>   <i class="fab fa-js"></i></span>
+                    <p class="center"><a href="https://jgd625.github.io/quizapp/" target="_blank">DEMO</a> | <a href="https://github.com/JGD625/quizapp" target="_blank">REPO</a></p>
+            </div>
         </section>
+
+        <section id="projects-section-DT">
+                <h5><span class="bgwhite black">Projects</span></h5>
+            <div class="flex-container">
+            <div class="project-DT-container-left">
+                <h2>The Coffee Quiz</h2>
+                <p class="center">An interactive quiz to text your coffee IQ</p>
+                <p class="condensed">What would a coder's life be without java? I meant the coffee, but the script is nice too. This app is responsive and works equally well on desktops, phones, and tablets.</p><br>
+                <span class="center"><i class="fab fa-html5 fa-2x"></i>   <i class="fab fa-css3 fa-2x"></i>   <i class="fab fa-js fa-2x"></i></span>
+                <p class="center"><a href="https://jgd625.github.io/quizapp/" target="_blank">DEMO</a> | <a href="https://github.com/JGD625/quizapp" target="_blank">REPO</a></p>
+            </div>
+            <div class="project-DT-container-right">
+                    <img class="DTthumb1" src="https://static.wixstatic.com/media/d9f074_bb645078c19248baaaaa25269bb94d29~mv2.jpg" alt="coffe quiz mobile">
+            </div>
+            </div>
+        </section>
+
         <section id="social-section">
-            Social Media
+            <h5><span class="bgwhite black">Let's Connect</span></h5><br>
+            <ul class="contact-ul">
+                <li><a href="https://www.linkedin.com/in/julie-butisbauch-ba8b0a63/"><i class="fab fa-linkedin fa-3x"></i><br>LinkedIn</a></li>
+                <li><a href="https://github.com/JGD625"><i class="fab fa-github fa-3x"></i><br>GitHub</a></li>
+            </ul><br>
+           <p class="center line24"> I'd love to hear from you: <a href="mailto:jdbutisbauch@gmail.com?Subject=Nice%20to%20meet%20you" target="_top"> jdbutisbauch@gmail.com</a> </p>
         </section>
-        <section id="contant-section">
-            Contact
-        </section>
+
     </main>
 
     <nav role="navigation">
-            <div id="logo">LOGO</div>
-            <div class="nav-list">
+        
+            <div class="mobile-title-nav">
+                <h5><span>JDButisbauch</span></h5>
+            </div> 
+            <div>
                 <ul>
-                   <li> Navigation </li>
-                   <li>Links </li>
-                   <li>and </li>
-                   <li>Icons</li>
-                </ul>
-            </div>
+                   <li class="navlink"><a href="#bio-section">BIO</a></li>
+                   <li class="navlink no-display-DT"><a href="#projects-section">PROJECTS</a></li>
+                   <li class="navlink no-display-M"><a href="#projects-section-DT">PROJECTS</a></li>
+                   <li class="navlink"><a href="#social-section">CONNECT</a></li>
+                </ul> 
+             </div>   
     </nav>
-
-    <footer role="content-info">
-            Email Address and Thanks
-    </footer>
 </body>
 </html>
